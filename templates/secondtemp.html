@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+           background-color: red;
+           color: white; 
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>This is second html page rendered by app2</h1>
+        <h2>Heighest among 3 numbers using elif</h2>
+        {% if a > b and a > c%}
+        <h2>a={{a}} is Heighest</h2>
+        {% elif b > a and b > c %}
+        <h2>b={{b}} is Heighest</h2>
+        {% else %}
+        <h2>c={{c}} is Heighest</h2>
+        {% endif %}
+        <a href="{% url 'app1:firsttemp'%}">Click here to navigate home page</a>
+    </center>
+</body>
+</html>

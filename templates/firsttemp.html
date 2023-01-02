@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: lightgreen;
+        }
+        a
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>This is the first html page rendered by app1</h1>
+        <h1><marquee>Jinja operational tags conditional statments</marquee></h1>
+        <h1>Heighest among 3 numbers</h1>
+        <h1>
+            {% if a > b %}
+                {% if a > c %}
+                    <h2>a={{ a }} is heighest</h2>
+                {% else %}
+                    <h2>c={{c}} is heighest</h2>
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                 <h2>b={{b}} is heighest</h2>
+                {% else %}
+                <h2>c={{c}} is heighest</h2>
+                {% endif %}
+            {% endif %}
+        </h1>
+        <a href="{% url 'app2:secondtemp'%}">Click here to navigate next page</a>
+    </center>
+</body>
+</html>
